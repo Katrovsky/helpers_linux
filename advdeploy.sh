@@ -21,7 +21,7 @@ cd "$ABSOLUTE_REPOSITORY_PATH"
 # Удалите строку с gem "jekyll"
 sed -i '/gem "jekyll"/d' Gemfile
 
-# Расскомментируйте строку # gem "github-pages", group: :jekyll_plugins
+# Раскомментируйте строку # gem "github-pages", group: :jekyll_plugins
 sed -i 's/# gem "github-pages", group: :jekyll_plugins/gem "github-pages", group: :jekyll_plugins/' Gemfile
 
 # Добавьте в группу group :jekyll_plugins gem 'jekyll-admin' и gem 'webrick'
