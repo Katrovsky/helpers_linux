@@ -29,8 +29,8 @@ sudo systemctl enable --now lighttpd.service
 sudo pihole -a -p
 
 # Изменение настроек Pi-hole для использования Cloudflare в качестве DNS-серверов
-sudo sed -i 's/PIHOLE_DNS_1=8.8.8.8/PIHOLE_DNS_1=1.1.1.1/g' /etc/pihole/setupVars.conf
-sudo sed -i 's/PIHOLE_DNS_2=8.8.4.4/PIHOLE_DNS_2=1.0.0.1/g' /etc/pihole/setupVars.conf
+sudo sed -i 's/PIHOLE_DNS_1=.*/PIHOLE_DNS_1=94.140.14.14/g' /etc/pihole/setupVars.conf
+sudo sed -i 's/PIHOLE_DNS_2=.*/PIHOLE_DNS_2=94.140.15.15/g' /etc/pihole/setupVars.conf
 
 # Запуск службы Pi-hole
 sudo systemctl enable --now pihole-FTL.service
